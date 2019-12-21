@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	 <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <meta name="description" content="ML Example">
+	 <meta name="author" content="Ali Afzal">
+
+	 <title>Emotion Detector</title>
+
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+	 <script src="../static/index.js"></script>
+</head>
+ 
+<body>
+    <div class="container"> 
+			<div class="jumbotron">
+					<h1>Audio Emotion Detector</h1>
+					<p>Created by: Ali Afzal</p>
+					<a href="https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio">Dataset</a>
+				  </div>
+        <form id="uploadform" method="post" enctype="multipart/form-data">
+        	<h3>Select audio clip (.wav)</h3>
+			<div class="form-group">
+				<label for="sel1">Select list:</label>
+				<select class="form-control" id="sel1" name="file-list">					  
+				</select>
+			</div>
+			<br>
+			<div id="audio"></div>
+				
+			<br>
+			<button class="btn btn-md btn-primary btn-block" type="button" id="predict-button">Predict</button>
+		</form>   
+		<div id="alert"></div>
+		<div id="loading"></div>
+		<div id="cards">
+		</div>
+	 </div>  
+	 <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2020 Copyright:
+		  <a href="https://afzala.com/">Ali Afzal</a>
+		</div>
+		<!-- Copyright -->
+	  
+	  </footer>
+	  <!-- Footer -->
+</body>
+ 
+</html>
