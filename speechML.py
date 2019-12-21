@@ -70,7 +70,7 @@ class Speech:
 
     def load_data(self, test_size=0.2):
         x,y=[],[]
-        for file in glob.glob("/Users/aliafzal/Desktop/speech/data/Actor_*/*.wav"):
+        for file in glob.glob("data/Actor_*/*.wav"):
             file_name=os.path.basename(file)
             emotion=self.emotions[file_name.split("-")[2]]
             if emotion not in self.observed_emotions:
