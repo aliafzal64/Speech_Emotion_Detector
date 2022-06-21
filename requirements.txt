@@ -29,7 +29,7 @@ librosa==0.7.1
 llvmlite==0.30.0
 MarkupSafe==1.1.1
 numba==0.46.0
-numpy==1.17.4
+numpy==1.22.0
 pathspec==0.5.9
 pyasn1==0.4.8
 pycparser==2.19
